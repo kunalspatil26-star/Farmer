@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+body {
+  @apply min-h-screen bg-farmsoil text-farmgray;
+}
+
+button,
+input,
+select,
+textarea {
+  @apply font-sans;
+}
+
+::selection {
+  @apply bg-farmgreen text-white;
+}
+
+.light-mode {
+  --bg: #f7f5ee;
+  --surface: #ffffff;
+  --text: #334155;
+}
+
+.dark-mode {
+  --bg: #0f172a;
+  --surface: #1e293b;
+  --text: #e2e8f0;
+}
